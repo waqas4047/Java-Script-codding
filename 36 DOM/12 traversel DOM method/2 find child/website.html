@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wesite</title>
+    <style>
+        #outer {
+            height: 400px;
+            width: 800px;
+            border: 1px solid red;
+            background-color: yellow;
+        }
+
+        #inner {
+            height: 300px;
+            width: 700px;
+            margin: auto;
+            border: 1px solid red;
+            background-color: pink;
+        }
+
+        div {
+            height: 70px;
+            width: 70px;
+            display: flex;
+            border: 2px solid black;
+            margin: 100px 4px 0 4px;
+            justify-content: center;
+            background-color: white;
+
+        }
+
+        #inner div {
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <h2>outer</h2>
+        <div id="inner">
+            <h2>inner</h2>
+            <div>A</div>
+            <div>B</div>
+            <div id="child-c">C</div>
+            <div>D</div>
+            <div>E</div>
+        </div>
+    </div>
+    <!-- remove the script code so the color will change -->
+    <script src="1child.js"></script>
+    <script src="2childNodes.js"></script>
+    <script src="2childNodes.js"></script>
+</body>
+
+</html>
