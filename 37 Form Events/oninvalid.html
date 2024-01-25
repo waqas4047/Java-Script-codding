@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="fname">Name</label>
+        <input type="text" name="fname" id="fname" oninvalid="alert('please fill the fname')" required><br><br>
+        <label for="class">Class</label>
+        <input type="text" name="class" id="class"><br><br>
+
+        <label for="Country">Country</label>
+        <select id="Country" onfocus="focusfunction(this)">
+            <option value="brazel">Brazel</option>
+            <option value="China">China</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="England">England</option>
+            <option value="Amarica">Amarica</option>
+        </select><br><br>
+        <input type="submit" name="" id="">
+    </form>
+    <script>
+        function focusfunction(element) {//lin this element the value of this will move here
+            var x = element.value
+            document.getElementById("test").innerHTML = x;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>open window</title>
+</head>
+<body>
+    <button onclick="windowopen()">Open window</button>
+    <button onclick="windowclose()">Close window</button>
+    <script>
+        var mywindow;
+        function windowopen(){
+            //inbelow function url is address of newwindow and _blank is for to open url in new tab
+            //we can also use _parent in place of _blank and the width and height is also opetional 
+            //it work with out height and width and _blank etc left and top is postion of new window
+            mywindow=window.open("https://www.google.com","_blank","width=500px,height=400px,left=300px,top=400px")
+        }
+        function windowclose(){
+            if(mywindow){
+
+                mywindow.close();
+            }
+        }
+    </script>
+</body>
+</html>

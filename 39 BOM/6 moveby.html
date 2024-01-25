@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>open window</title>
+</head>
+
+<body>
+    <button onclick="windowopen()">Open window</button>
+    <button onclick="movewindow()">Move window</button>
+    <script>
+        var mywindow;
+        function windowopen() {
+            mywindow = window.open("", "_blank", "width=500px,height=400px,left=100px,top=100px")
+            mywindow.document.write("<p>heloo how are you</p>")
+        }
+        function movewindow() {
+            //moveby work on relative position
+            mywindow.moveBy(200, 200); //first 100 is from left second is from top
+            mywindow.focus();//focus is for that i want when i open new window then i want to focus 
+            //on new window
+        }
+    </script>
+</body>
+
+</html>

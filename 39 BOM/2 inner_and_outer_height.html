@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+
+<body onresize="resizefunc()">
+    <script>
+        function resizefunc() {
+            console.clear();//this is for that to not answer in new lines
+        var iheight = window.innerHeight;//this will show us inner height of browser
+        console.log("inner height of browzer " + iheight);
+        var oheight = window.outerHeight;//this will show us outer height of borwser
+        console.log("outer height of browzer " + oheight);
+        }
+        
+    </script>
+</body>
+
+</html>

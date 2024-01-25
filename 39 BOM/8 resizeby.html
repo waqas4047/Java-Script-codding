@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>open window</title>
+</head>
+
+<body>
+    <button onclick="windowopen()">Open window</button>
+    <button onclick="resizewindow()">Resize window</button>
+    <script>
+        var mywindow;
+        function windowopen() {
+            mywindow = window.open("", "_blank", "width=300px,height=200px,left=300px,top=400px")
+            mywindow.document.write("<p>heloo how are you</p>")
+        }
+        function resizewindow() {
+            //resizeBy will resize the window and will add the new resize parameter to the older width
+            //and height now it new height will be 600 and widht will be 700 ;
+            mywindow.resizeBy(400, 400); //first 400is for width second is for height
+            mywindow.focus();//focus is for that i want when i open new window then i want to focus 
+            //on new window
+        }
+    </script>
+</body>
+
+</html>
